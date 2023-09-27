@@ -1,0 +1,30 @@
+/* styles.css */
+body{
+    background-color: #007bff;
+}
+
+/* Estilo para o cabeçalho da página */
+h1 {
+    color: red; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+/* Estilo para links de navegação */
+a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #007bff; /* Cor do link */
+}
+
+/* Estilo para botões */
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remover borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Mostrar cursor de mão ao passar o mouse */
+}
+
+/* Estilo para formulários */
+form {
+    margin: 20px 0; /* Espaçamento externo do formulário */
+}

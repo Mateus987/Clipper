@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produtos</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <button><a href="/add_product">Adicionar Produto</a></button>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Data de Criação</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.name }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                <td>
+                    <button><a href="/edit_product/{{ product.id }}">Editar</a></button>
+                    <button><a href="/delete_product/{{ product.id }}">Excluir</a></button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </button>
+    </table>
+</body>
+</html>
