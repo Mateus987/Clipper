@@ -2,6 +2,8 @@
 
 --------------
 
+<h2>Sumário:</h2>
+
 Com base na documentação: https://developers.tray.com.br/#como-integrar
 
 ERP Tray
